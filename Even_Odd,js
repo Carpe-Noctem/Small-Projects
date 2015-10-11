@@ -1,0 +1,22 @@
+/*
+Input a number into this program and it will tell you whether it
+is even or odd.
+*/
+
+console.log("Welcome to my even-or-odd number program!");
+
+var E_O = function(number) {
+    if (number % 2 === 0 || number === 0 || number % -2 === 0) {
+        console.log("The number " + number + " is even.");
+    }
+    else if (number % 2 === 1 || number % 2 === -1 || number === 1) {
+        console.log("The number " + number + " is odd.");
+    }
+    else {
+        console.log("The number " + number + " is neither even or odd. It is " +
+        "likely a fraction, decimal, or not a numerical value. Not one of " +
+        "which can be even or odd.");
+    }
+};
+
+E_O(prompt("Input a number to find whther it is even or odd: "));
